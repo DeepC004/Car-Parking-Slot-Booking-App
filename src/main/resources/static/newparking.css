@@ -1,0 +1,140 @@
+/*=======================VARIABLE CSS=====================*/
+:root{
+
+    --hue-color:185;
+
+    --input-color: hsl(var(--hue-color),70%,88%);
+    --first-color: hsl(var(--hue-color),61%,57%);
+    --first-color-alt: hsl(var(--hue-color),50%,52%);
+    --title-color: hsl(var(--hue-color),8%,15%);
+    --text-color: hsl(var(--hue-color),8%,45%);
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #00B4D8; */
+    /* background-image: linear-gradient(to right top, #023E8A, #0077B6, #48CAE4, #00B4D8, #ADE8F4); */
+    margin: 0;
+
+}
+
+button {
+    background-color: #03045E;
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+input, .btn {
+    border-radius: 0.313em;
+    border: none;
+    height: 2.813em;
+    width: 18.75em;
+}
+
+input {
+    padding: 0 0 0 1em;
+}
+
+.btn {
+    background-color: var(--first-color);
+    padding: 0.7em;
+    transition: all 150ms;
+}
+
+#loginButton:hover {
+    background-color: var(--first-color-alt);
+    transform: ease-in-out;
+    cursor: pointer;
+
+}
+
+.passwordField {
+    padding-top: 1em;
+    padding-bottom: 2.813em;
+}
+
+#forgot {
+    padding-left: 9.7em;
+    color: #FFFFFF;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login p {
+    color: #FFFFFF;
+}
+
+.login-btn {
+    font-weight: bold;
+}
+
+.login-btn-social {
+    padding: 0.625em 0;
+}
+
+
+::placeholder {
+    color: #000000;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#loginButton {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    margin-top: 1em;
+    color: #FFFFFF;
+}
+
+form {
+    background-color: white;
+    border-radius: 0.75em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5em;
+    
+}
+
+.password {
+    margin-top: 0.5em;
+}
+
+img{
+    object-fit: fill;
+}
+
+.outer-container{
+    background-image: url(/images/blue.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #00B4D8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 45%;
+    height: 17%;
+}
+
+.location, .slottime, .carmodel{
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+::placeholder{
+    color: var(--text-color);
+}
+
+

@@ -1,0 +1,81 @@
+/*=======================VARIABLE CSS=====================*/
+:root{
+
+    --hue-color:185;
+
+    --input-color: hsl(var(--hue-color),70%,88%);
+    --first-color: hsl(var(--hue-color),61%,57%);
+    --first-color-alt: hsl(var(--hue-color),50%,52%);
+    --title-color: hsl(var(--hue-color),8%,15%);
+    --text-color: hsl(var(--hue-color),8%,45%);
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background-image: url(/images/blue.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #00B4D8;
+    margin: 0;
+}
+
+.btn{
+    background-color: var(--first-color);
+    border-radius: 00.313em;
+}
+
+.btn:hover{
+    background-color: var(--first-color-alt);
+}
+
+.container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner1{
+    background-color: white;
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    border-radius: 0.75em;
+}
+
+.inner2{
+    background-color: white;
+    padding: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    border-radius: 0.75em;
+}
+
+.man{
+    background-color: black;
+}
+
+.no{
+    border-radius: 00.313em;
+    border: none;
+    margin-top: 0.5em;
+    padding: 0.4em 1em;
+    background-color: var(--input-color);
+}
+
+.non{
+    background-color: white;
+    margin: 1em;
+    border-radius: 0.357em;
+}
+
+.addbtn, .deletebtn{
+    border: none;
+}

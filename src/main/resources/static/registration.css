@@ -1,0 +1,107 @@
+/*=======================VARIABLE CSS=====================*/
+:root{
+
+    --hue-color:185;
+
+    --input-color: hsl(var(--hue-color),70%,88%);
+    --first-color: hsl(var(--hue-color),61%,57%);
+    --first-color-alt: hsl(var(--hue-color),50%,52%);
+    --title-color: hsl(var(--hue-color),8%,15%);
+    --text-color: hsl(var(--hue-color),8%,45%);
+}
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #00B4D8; */
+    background-image: url(/images/blue.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #00B4D8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.regis{
+    background-color: white;
+    padding: 5.5em;
+    border-radius: 0.75em;
+}
+
+input, .btn {
+    border-radius: 0.313em;
+    border: none;
+    height: 2.813em;
+    width: 18.75em;
+}
+
+.display-4 {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.create-account-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.create-account {
+    background-color: var(--first-color);
+    color: #FFFFFF;
+    border-radius: 0.313em;
+    height: 2.813em;
+    width: 18.75em;
+    transition: all 150ms;
+}
+
+.create-account:hover {
+    cursor: pointer;
+    background-color: var(--first-color-alt);
+    transform: ease-in-out;
+
+}
+
+input {
+    padding: 0 0 0 1em;
+}
+
+::placeholder {
+    color: var(--text-color);
+}
+
+.userData {
+    position: relative;
+    margin-top: 4em;
+}
+
+.userInputFieldRight {
+    padding-left: 1em;
+}
+
+.userInputFieldRight, .userInputFieldLeft {
+    padding-bottom: 1em;
+}
+
+.email, .phone, .username, .password{
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+
+
+
+
+
+
